@@ -20,4 +20,4 @@
 - 英単語を追加する場合も、比較的簡単に追加ができ、アップデートが非常に簡単なところはとても魅力的
 
 ## URL
-https://daideguchi.github.io/memo_app/
+https://daideguchi.github.io/memo_app/index.html
