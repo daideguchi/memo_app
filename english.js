@@ -25,6 +25,25 @@ window.onload = function () {
         array.push(log);
         log = array
         document.getElementById("seikailog").innerHTML = log
+        
+               if (total_seikai <= 30) {
+            document.getElementById("syougou").innerText = "駆け出しのエンジニア"
+
+        } else if (30 <= total_seikai <= 60) {
+            document.getElementById("syougou").innerText = "普通のエンジニア"
+
+        } else if (61 <= total_seikai <= 100) {
+            document.getElementById("syougou").innerText = "上級のエンジニア"
+        } else if (101 <= total_seikai <= 200) {
+            document.getElementById("syougou").innerText = "ベテランエンジニア"
+        }
+        else if (201 <= total_seikai <= 1000) {
+            document.getElementById("syougou").innerText = "神"
+        }
+        else if (1001 <= total_seikai) {
+            document.getElementById("syougou").innerText = "仙人"
+
+        }
 
 
         // console.log(data1.total_seikai)
@@ -164,7 +183,7 @@ qa[121] = ["disable", "無効にする", "有効にする", "重複する", 1];
 qa[122] = ["display", "画面", "詳細", "桁", 1];
 qa[123] = ["distribute", "配布する", "回収する", "定義する", 1];
 qa[124] = ["documentation", "要素", "生成", "資料", 3];
-qa[125] = ["duplicate", "修復する", "複製する", "修復する", 2];
+qa[125] = ["duplicate", "修復する", "複製する", "定義する", 2];
 qa[126] = ["duration", "配布", "開発", "期間", 3];
 qa[127] = ["dynamic", "動的な", "静的な", "正常な", 1];
 qa[128] = ["dynamically", "動的に", "静的に", "正常に", 1];
